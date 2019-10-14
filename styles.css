@@ -1,0 +1,175 @@
+body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Lato", sans-serif;
+  }
+
+  body,
+  html {
+    height: 100%;
+    line-height: 1.8;
+  }
+
+  /* Create a Parallax Effect */
+  .bgimg-1,
+  .bgimg-2,
+  .bgimg-3 {
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .text-left {
+    padding: 5%;
+    padding-right: 65%;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* First image (Logo. Full height) */
+  .bgimg-1 {
+    background-image: url('media/title-image.jpg');
+    min-height: 100%;
+  }
+
+  /* Second image (Portfolio) */
+  .bgimg-2 {
+    background-image: url('media/title-image.jpg');
+    min-height: 500px;
+  }
+
+  /* Third image (Contact) */
+  .bgimg-3 {
+    background-image: url('media/title-image.jpg');
+    min-height: 400px;
+  }
+
+  .w3-wide {
+    letter-spacing: 10px;
+  }
+
+  .w3-hover-opacity {
+    cursor: pointer;
+  }
+
+  /* Turn off parallax scrolling for tablets and phones */
+  @media only screen and (max-device-width: 1600px) {
+
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3 {
+      background-attachment: scroll;
+      min-height: 400px;
+    }
+  }
+
+  .mySlides {
+    display: none
+  }
+
+  .w3-left,
+  .w3-right,
+  .w3-badge {
+    cursor: pointer
+  }
+
+  .w3-badge {
+    height: 13px;
+    width: 13px;
+    padding: 0
+  }
+
+  .centered {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .project-title {
+    position: absolute; 
+    top: 6vw; 
+    font-size: 3vw; 
+    color: whitesmoke; 
+    white-space: nowrap;
+  }
+
+  .project-text {
+    position: absolute; 
+    top: 17vw; 
+    font-size: 1.5vw; 
+    color: whitesmoke; 
+  }
+
+  .project-left {
+    left: 4vw; 
+    padding-right: 60%; 
+  }
+
+  .project-right {
+    right: 4vw; 
+    padding-left: 60%; 
+    text-align: right;
+  }
+
+  .hoverable {
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+  }
+
+  .button {
+    background-color: rgba(255, 255, 255, 0);
+    border: 0.15vw solid whitesmoke;
+    color: whitesmoke;
+    padding: 1vw 2vw;
+    text-align: center;
+    font-size: 1vw;
+    cursor: pointer;
+    position: absolute;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+  }
+
+  .button:hover {
+    background-color: whitesmoke;
+    color: black;
+  }
+
+  .project-title-small {
+    position: absolute; 
+    top: 6vw; 
+    font-size: 4vw; 
+    color: whitesmoke; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .project-text-small {
+    position: absolute; 
+    top: 14vw; 
+    font-size: 3vw; 
+    color: whitesmoke;
+    padding: 0 3vw 0 3vw; 
+    text-align: center;
+  }
+
+  .button-small {
+    background-color: rgba(255, 255, 255, 0);
+    border: 0.15vw solid whitesmoke;
+    color: white;
+    padding: 1vw 2vw;
+    text-align: center;
+    font-size: 2vw;
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
