@@ -10,11 +10,15 @@ function onClick(element) {
   window.onscroll = function () { myFunction() };
   function myFunction() {
     var navbar = document.getElementById("myNavbar");
+    var bar_name = document.getElementById("bar-name");
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
       navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+      bar_name.className = bar_name.className.replace(" w3-hide", "");
     } else {
       navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+      if (bar_name.className.indexOf("w3-hide") == -1) bar_name.className += " w3-hide";
     }
+
   }
 
   // Used to toggle the menu on small screens when clicking on the menu button
@@ -25,4 +29,5 @@ function onClick(element) {
     } else {
       x.className = x.className.replace(" w3-show", "");
     }
+    console.log("foo")
   }
