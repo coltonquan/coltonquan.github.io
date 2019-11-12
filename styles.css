@@ -10,7 +10,9 @@ body,
 
   body,
   html {
+    width: 100%;
     height: 100%;
+    margin: 0;
     line-height: 1.8;
   }
 
@@ -136,6 +138,12 @@ body,
     position: absolute;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
+    text-decoration: none;
+  }
+
+  .google-button {
+    position: absolute;
+    width: 75vw;
   }
 
   .button:hover {
@@ -158,7 +166,7 @@ body,
     font-size: 3vw; 
     color: whitesmoke;
     padding: 0 3vw 0 3vw; 
-    text-align: center;
+    text-align: left;
   }
 
   .button-small {
@@ -172,4 +180,19 @@ body,
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-decoration: none;
   }
+
+  .google-button-small {
+    position: absolute;
+    width: 30vw;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  a.anchor {
+    display: block;
+    position: relative;
+    top: -2vw;
+    visibility: hidden;
+}
